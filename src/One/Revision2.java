@@ -138,8 +138,14 @@ public class Revision2 {
 			n++;
 		}
 		//Ternary operator
+		
 		String result = m>n ? "M is greater" : "N is greater";
 		System.out.println(result);
+		
+		int o=100;
+		int p=140;
+		String Compare =p<o ? "O is greater":"P is greater";
+		System.out.println(Compare);
 		
 		
 		par(12, 10);
