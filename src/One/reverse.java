@@ -60,7 +60,7 @@ System.out.println("=======================================");
 		int i;
 		int m = 0;
 		int pNum = 0;
-		int input = 6;
+		int input = 7;
 		m = input / 2;
 		if (input == 0 || input == 1) {
 			System.out.println(input + " is not prime number");
