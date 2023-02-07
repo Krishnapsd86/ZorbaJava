@@ -20,6 +20,8 @@ public class Java2 {
 		// Ternary operator example
 		String result1 = game.equals(game3) ? "Both game are same" : "Both game are not same";
 		System.out.println(result1);
+		String resultA =game.equals(game1)? "Both game are same" : "Both game are not same";
+		System.out.println(resultA);
 
 		// Escaspe character
 
