@@ -27,6 +27,7 @@ public class Java6 {
 		System.out.println(aver);
 		
 		//defining two matrix array
+		
 		int [][]matrix ={{11,22,33,44},{12,24,36,48,60}};
 		System.out.println(matrix[0][3]);
 		System.out.println(matrix[1][4]);
