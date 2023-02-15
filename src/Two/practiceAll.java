@@ -154,8 +154,6 @@ public class practiceAll {
 		}
 		
 		String msg ="";
-		boolean em = sentence.isEmpty();
-		boolean em1 = msg.isEmpty();
 		if(sentence.isEmpty()) {
 			System.out.println("Try to find the empty one");
 		}else if (msg.isEmpty()) {
