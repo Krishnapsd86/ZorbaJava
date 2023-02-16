@@ -30,6 +30,7 @@ public class java7 {
 		num[2][0] = 99;
 		num[2][1] = 22;
 		num[2][2] = 55;
+		num[2][3] = 65;
 
 		System.out.println(num[1][2]);
 
@@ -111,6 +112,45 @@ public class java7 {
 
 		for (String[] name1 : names) {
 			System.out.println(Arrays.toString(name1));
+		}
+		
+		int [][][]ex= {
+				{
+				    {1,2,3},
+					{4,5,6},
+					{7,8,9}
+				},
+				{   {11,22,33},
+					{44,55,66},
+					{77,88,99}
+				},
+				{   {111,222,333},
+					{444,555,666},
+					{777,888,999}
+				}
+				};
+		System.out.println(ex[2][2][0]);
+		//for loop
+		for(int i =0;i<ex.length;i++) {
+			int [][]ex1=ex[i];
+			for(int j =0;j<ex1.length;j++) {
+				int []ex2=ex1[j];
+				for(int k=0;k<ex2.length;k++) {
+					System.out.println(ex2[k]);
+					//System.out.println(Arrays.toString(ex2));
+				}
+			}
+		}
+		
+		
+		//for each
+		
+		for(int[][]e1:ex) {
+			for(int[]e2:e1) {
+				for(int e3:e2) {
+					System.out.println(e3);
+				}
+			}
 		}
 
 	}
