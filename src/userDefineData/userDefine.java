@@ -6,9 +6,29 @@ public class userDefine {
 		
 		//user define data
 
-		Human name = new Human("male ", "chandra ", "giri ", 25);	
-		System.out.println(name.gender+name.firstName+name.lastName+name.age);
-		name.talk();
+		Human chandra = new Human("female ", "chandra ", "giri ", 25);	
+		Human hari = new Human("male","hari","lama",32);
+		Human ram = new Human("male","ram","tamang",32);
+		Human ayush = new Human("male","ayush","lamsal",32);
+		
+		//storing object to Array
+		Human []name = {chandra,hari,ram,ayush};
+		for(int i=0;i<name.length;i++) {
+			System.out.println(name[i].firstName);
+			System.out.println(name[i].lastName);
+			System.out.println(name[i].gender);
+			System.out.println(name[i].age);
+			name[i].talk();
+			
+		}
+		for(Human a:name) {
+			System.out.println(a.firstName);
+			System.out.println(a.lastName);
+			System.out.println(a.gender);
+			System.out.println(a.age);
+			a.walk();
+		}
+		
 		
 		vehicle detail = new vehicle("BMW ","White ","Suv ",2023);
 		System.out.println(detail.model+detail.color+detail.type+detail.year);
@@ -44,10 +64,10 @@ class vehicle{
 	String color;
 	String type;
 	int year;
-	public vehicle(String m,String c,String t,int yr) {
-		this.model=m;
-		this.color=c;
-		this.type=t;
+	public vehicle(String model,String color,String type,int yr) {
+		this.model=model;
+		this.color=color;
+		this.type=type;
 		this.year=yr;
 	}
 	public void start() {
