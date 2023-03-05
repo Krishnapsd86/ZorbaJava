@@ -5,7 +5,7 @@ public class inheritanceType {
 	public static void main(String[] args) {
 		
 		// creating object of Single  Inheritance
-		Student achal = new Student("Achal Sharma","Pokhara",28);
+		Student2 achal = new Student2("Achal Sharma","Pokhara",28);
 		achal.displayFullName();
 		Teacher shyam = new Teacher("Shyam Roa","Pokhara",35,10000);
 		shyam.displayBonus();
@@ -23,11 +23,11 @@ public class inheritanceType {
 
 }
       //Single  Inheritance
-class Student{
+class Student2{
 	String fullName;
 	String city;
 	int age;
-	public Student(String fn,String city,int age) {
+	public Student2(String fn,String city,int age) {
 		this.fullName =fn;
 		this.city = city;
 		this.age = age;
@@ -36,7 +36,7 @@ class Student{
 		System.out.println(this.fullName);
 	}
 }
-class Teacher extends Student{
+class Teacher extends Student2{
 int salary;
 	public Teacher(String fn, String city, int age,int salary) {
 		super(fn, city, age);
