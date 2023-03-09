@@ -8,10 +8,17 @@ public class StaticIncrementalMethod {
 		webSite tw = new webSite("Twitter");
 		webSite tk = new webSite("TikTok");
 		webSite zm = new webSite("Zoom");
-		
-		System.out.println(webSite.count);
-		
+		webSite tk1 = new webSite("TikTok1");
+		webSite zm1 = new webSite("Zoom1");
+		System.out.println(webSite.count);	
 		webSite.increaseCount();
+		
+		Plant r = new Plant("Rose");
+		Plant r1 = new Plant("Rose1");
+		Plant r2 = new Plant("Rose2");
+		Plant r3= new Plant("Rose3");
+		System.out.println(Plant.count);
+		
 
 	}
 
@@ -38,3 +45,27 @@ class webSite{
 //	}
 	
 }
+class Plant {
+	static int count =0;
+	String pName;
+	Plant(String pName){
+		this.pName = pName;
+		
+		//Plant.count = Plant.count+1;
+		Plant.increaseCount();
+		
+	}
+	void displayP() {
+		System.out.println(this.pName);
+	}
+	public static void increaseCount() {
+		Plant.count=Plant.count +1;
+	}
+}
+
+
+
+
+
+
+
