@@ -10,6 +10,12 @@ public class StaticIncrementalMethod {
 		webSite zm = new webSite("Zoom");
 		webSite tk1 = new webSite("TikTok1");
 		webSite zm1 = new webSite("Zoom1");
+		fb.displayWeb();
+		tw.displayWeb();
+		tk.displayWeb();
+		zm.displayWeb();
+		tk1.displayWeb();
+		zm1.displayWeb();
 		System.out.println(webSite.count);	
 		webSite.increaseCount();
 		
@@ -17,6 +23,10 @@ public class StaticIncrementalMethod {
 		Plant r1 = new Plant("Rose1");
 		Plant r2 = new Plant("Rose2");
 		Plant r3= new Plant("Rose3");
+		r.displayP();
+		r1.displayP();
+		r2.displayP();
+		r3.displayP();
 		System.out.println(Plant.count);
 		
 
