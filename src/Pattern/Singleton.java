@@ -21,10 +21,9 @@ class items {
 	static String name;// define parameter as static
 	static items it;// instantiated
 
-	private items() {
-	}
+	private items() {}//constructor
 
-	public static items displayItems() {
+	public static items displayItems() {//methods
 		if (it == null) {
 			System.out.println("Its the methods of singleton");// checking its called or not
 			it = new items();// instantiated in methods
