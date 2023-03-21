@@ -7,7 +7,7 @@ public class Day2Hashmap {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//HashMap is key type
+		//HashMap more discribe and is key type
 		HashMap<String,String> CapitalCities = new HashMap<String,String>();
 		
 		//Add
