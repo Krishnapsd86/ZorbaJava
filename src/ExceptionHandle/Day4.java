@@ -6,6 +6,7 @@ import java.io.FileReader;
 
 public class Day4 {
 
+	@SuppressWarnings("null")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -21,15 +22,18 @@ public class Day4 {
 		}
 		System.out.println("Hello");
 
-		String firstName=null;
 		
+		String firstName=null;
 		try {
+			
 			System.out.println(firstName.charAt(0));
+			System.out.println(firstName);
 		} catch (NullPointerException e) {
 			System.out.println("Initialize Value.....???");
 		} catch (Exception e) {
 			System.out.println("Exception handle");
 		} finally {
+			
 			System.out.println("Finally will be executate");
 		}
 		
@@ -50,12 +54,13 @@ public class Day4 {
 			File file = new File("C:\\Users\\pankaj\\Desktop\\test.txt");
 			
 			BufferedReader br = new BufferedReader(new FileReader(file));
-			
+			br.close();
 		} catch (Exception e) {
 			System.out.println("File not Found");
 			e.printStackTrace();
 			System.out.println("Please provide correct path");
 		}
+		System.out.println("Bye");
 
 
 	}

@@ -23,7 +23,7 @@ public class Java6 {
 			sum1 =sum1 + b;
 		}
 		System.out.println(sum1);
-		aver = sum/num1.length;
+		aver = sum1/num1.length;
 		System.out.println(aver);
 		
 		//defining two matrix array
